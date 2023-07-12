@@ -4,6 +4,8 @@ import Logo from '../assets/icons/Logo_md.svg'
 import Link from 'next/link'
 
 const Header = () => {
+  const logged = true
+
   return (
     <>
       <div className="navbar bg-base-100">
@@ -21,21 +23,29 @@ const Header = () => {
           <Image src={Logo} height={35} alt='Logo'/>
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex items-center">
+        <div className="navbar-center hidden lg:flex items-center ">
           <ul className="menu menu-horizontal px-1">
-            <li><Link href="#">Catálogo</Link></li>
-            <li><Link href="#">Conversas</Link></li>
+            <li><Link href="#" className='text-lg font-semibold'>Catálogo</Link></li>
+            <li><Link href="#" className='text-lg font-semibold'>Conversas</Link></li>
           </ul>
         </div>
         <div className="navbar-end">
-          <div className='dropdown dropdown-end'>
+          <div className='dropdown dropdown-end dropdown-hover'>
           <label tabIndex={0} className="btn btn-circle btn-ghost mr-3 mt-2 avatar">
             <Image src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" width={1080} height={1080} alt='Avatar' className='rounded-full ring ring-primaty ring-offset-base-100 ring-offset-2'/>
           </label>
-          <ul tabIndex={0} className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52'>
-            <li><Link href="#">Minha Conta</Link></li>
-            <li><Link href="#" className='btn btn-error btn-sm'>Sair da Conta</Link></li>
-          </ul>
+          
+            {
+              logged === true ? 
+              (<ul tabIndex={0} className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52'>
+                <li><Link href="#">Minha Conta</Link></li>
+                <li><Link href="#" className='btn btn-error btn-sm'>Sair da Conta</Link></li>
+              </ul>) 
+              : 
+              (<ul tabIndex={0} className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52'>
+                <li><Link href="#" className='btn btn-success btn-sm'>Entrar na Conta</Link></li>
+              </ul>)
+            }
           </div>
         </div>
       </div>
