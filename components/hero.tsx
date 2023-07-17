@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='h-[435px] w-full flex sm:flex-row flex-col items-center justify-between'>
+    <div className='h-[435px] w-full flex sm:flex-row flex-col items-center justify-between mt-20'>
       <div>
         <div>
           <h2 className='sm:text-lg font-semibold'>Quer comprar o seu carro com segurança?</h2>
