@@ -19,7 +19,7 @@ const Header = () => {
               <li><Link href="#">Conversas</Link></li>
             </ul>
           </div>
-          <Link href="#" className="pl-3">
+          <Link href="/" className="pl-3">
           <Image src={Logo} height={35} alt='Logo'/>
           </Link>
         </div>
