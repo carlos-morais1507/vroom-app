@@ -11,7 +11,7 @@ const Card = () => {
         <h3>Rio de Janeiro - RJ</h3>
         <h2 className='font-semibold'>R$ 53.000,00</h2>
         <div className='card-actions'>
-          <Link href="#" className='btn btn-primary'>Ver Mais</Link>
+          <Link href="/car" className='btn btn-primary'>Ver Mais</Link>
         </div>
       </div>
     </div>
