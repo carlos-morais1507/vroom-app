@@ -13,13 +13,12 @@ const Product = () => {
         </div>
         <div className='w-full sm:w-[50%]'>
           <h1 className='text-primary font-bold text-6xl text-start'>Honda Civic</h1>
-          <h2 className='text-2xl font-semibold'>2022</h2>
-          <div className='sm:flex-col flex mt-5 gap-3 items-center sm:items-start'>
-          <h2 className='text-4xl font-bold'>R$53.000,00</h2>
-          <Link href="/chat" className='btn btn-primary w-fit'>Entrar em Contato</Link>
-          </div>
+          <h2 className='text-2xl font-semibold'>2022 • Rio de Janeiro</h2>
+          <h2 className='text-4xl font-bold mt-5'>R$53.000,00</h2>
+          <Link href="/chat" className='btn btn-primary w-fit mt-3'>Entrar em Contato</Link>
         </div>
       </div>
+
     </div>
   )
 }
